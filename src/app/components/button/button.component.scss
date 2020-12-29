@@ -1,0 +1,84 @@
+// @import url('./src/assets/fonts/BwModelica/woff/BwModelica-Medium.woff') format('woff');
+@import '@dcardim/daysign-tokens/dist/tokens.scss';
+
+
+.btn {
+    border-radius: $border-radius-pill;
+    font-family: $font-family-base;
+    font-weight: $font-weight-light;
+    line-height:$line-height-tight;
+    border: $border-width-none;
+    cursor: pointer;
+    transition: all 2s;
+    outline: none;
+    
+    min-width: 148px;
+}
+.btn--primary {
+    background-color: $color-primary-medium;
+    color: $color-neutral-lightest;
+
+    &:hover{
+        background-color: $color-primary-dark;
+    }
+
+    &:active{
+        background-color: $color-primary-darkest;
+    }
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.btn--secondary {
+    background-color: $color-secondary-medium;
+    color: $color-neutral-lightest;
+
+    &:hover{
+        background-color: $color-secondary-dark;
+    }
+
+    &:active{
+        background-color: $color-secondary-darkest;
+    }
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.btn--neutral {
+    background-color: $color-neutral-medium;
+    color: $color-neutral-lightest;
+
+    &:hover{
+        background-color: $color-neutral-dark;
+    }
+
+    &:active{
+        background-color: $color-neutral-darkest;
+    }
+
+    &:focus{
+        outline: none;
+    }
+}
+
+
+
+
+
+
+.btn--small {
+    font-size: $font-size-sm;
+    padding: $spacing-squish-quark;
+}
+.btn--medium {
+    font-size: $font-size-md;
+    padding: $spacing-squish-nano;
+}
+.btn--large {
+    font-size: $font-size-lg;
+    padding: $spacing-squish-xs;
+}
